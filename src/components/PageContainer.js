@@ -3,8 +3,9 @@ import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
-import Header from './Header';
+// import Header from './Header';
 import Footer from './Footer';
+import Navigation from './Navigation';
 
 function PageContainer (){
     const [currentPage, setCurrentPage] = useState('AboutMe');
@@ -25,7 +26,8 @@ function PageContainer (){
 
     return (
         <div>
-            <Header currentPage={currentPage} handlepageChange={handlePageChange}/>
+            
+            <Navigation currentPage={currentPage} handlePageChange={handlePageChange}/>
             {renderPage()}
             <Footer/>
         </div>
