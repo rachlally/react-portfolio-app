@@ -5,6 +5,10 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import Footer from './Footer';
 import Navigation from './Navigation';
+import Header from './Header';
+import '../styles/Pages.css'
+
+// import Header from './Header';
 
 function PageContainer (){
     const [currentPage, setCurrentPage] = useState('AboutMe');
@@ -24,9 +28,10 @@ function PageContainer (){
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <div>            
+        <div>
+            <Header/>        
             <Navigation currentPage={currentPage} handlePageChange={handlePageChange}/>
-            {renderPage()}
+            <div className="pageContainer">{renderPage()}</div>
             <Footer/>
         </div>
     );
