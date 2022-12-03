@@ -6,45 +6,45 @@ function Portfolio() {
 const [projects] = useState([
     {
         name: "Gloomhaven Helper",
-        app: "helper.com",
-        repo: "github.com",
-        description: "handlebars"
+        deployedApp: "https://gloomhaven-helper-deluxe.herokuapp.com/",
+        gitHubLink: "https://github.com/Mattdack/gloomhaven-helper",
+        description: "MySql, Handlebars, Node.JS"
     },
     {
         name: "Work Day Scheduler",
-        app: "schedule.com",
-        repo: "github.com",
-
+        deployedApp: "schedule.com",
+        gitHubLink: "github.com",
+        description: "JavaScript, Bootstrap"
     },
     {
         name: "Weather Dashboard",
-        app: "dashboard.com",
-        repo: "github.com",
-        image: "placeholder image"
+        deployedApp: "dashboard.com",
+        gitHubLink: "github.com",
+        description: "JavaScript, Bootstrap"
     },
     {
         name: "Team Profile Generator",
-        app: "generator.com",
-        repo: "github.com",
-        image: "placeholder image"
+        deployedApp: "generator.com",
+        gitHubLink: "github.com",
+        description: "CSS, JavaScript"
     },
     {
         name: "Note-Taker",
-        app: "note.com",
-        repo: "github.com",
-        image: "placeholder image"
+        deployedApp: "note.com",
+        gitHubLink: "github.com",
+        description: "CSS, JavaScript"
     },
     {
         name: "Code Quiz",
-        app: "spooky.com",
-        repo: "github.com",
-        image: "placeholder image"
+        deployedApp: "spooky.com",
+        gitHubLink: "github.com",
+        description: "CSS, JavaScript, Local Storage"
     }
 ])
     
     return (
-        <div className="grid text-center">
-            <div className="g-col-4">
+        <div>
+            <div>
                 {projects.map((p,i)=>(
                     <Project 
                     project={p}

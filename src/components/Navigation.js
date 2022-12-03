@@ -4,6 +4,7 @@ import '../styles/Navigation.css'
 function Navigation({currentPage, handlePageChange}) {
     return (
       <div>
+        <h3>Rachel Lally</h3>
         <ul className="nav nav-tabs justify-content-center">
           <li className="nav-item">
             <a href="#aboutme" onClick={()=> handlePageChange("AboutMe")}
