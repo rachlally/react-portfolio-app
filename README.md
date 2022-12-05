@@ -25,5 +25,7 @@ Thank you to my instructor, TAs, and tutors at the UW Full-Stack Web Development
 
 ## License
 
+MIT License
 
+Copyright (c) 2022 rachlally
 
