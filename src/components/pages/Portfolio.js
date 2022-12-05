@@ -47,7 +47,7 @@ function Portfolio() {
 
 
     return (
-        <div >
+        <div className="portfolio">
             {projects.map((p, i) => (
 
                 <Project

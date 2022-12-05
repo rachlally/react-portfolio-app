@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
 import '../../styles/Contact.css';
+import Button from 'react-bootstrap/Button';
 
 function Contact() {
 
@@ -42,9 +43,9 @@ function Contact() {
   }
 
   return (
-    <section>
-      <div>
-      <form className="form" onSubmit={handleSubmit}>
+    <section className="formContainer">
+      <div className="form ">
+      <form  onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Enter your name:</label>
           <input
@@ -64,7 +65,7 @@ function Contact() {
           />
         </div>
         <div>
-          <label htmlFor="message">Message here:</label>
+          <label htmlFor="message">Message here:</label><br/>
           <textarea
             name="message"
             rows="5"
@@ -77,7 +78,7 @@ function Contact() {
             <p>{errorMessage}</p>
           </div>
         )}
-        <button type="submit">Submit</button>
+        <Button variant="secondary" type="submit">Submit</Button>
       </form>
       </div>
     </section>

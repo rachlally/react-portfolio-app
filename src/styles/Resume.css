@@ -1,0 +1,10 @@
+.resume {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    
+}
+
+.resumeContainer{
+    height: 80vh
+}
