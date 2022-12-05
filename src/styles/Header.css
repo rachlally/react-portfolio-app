@@ -1,5 +1,13 @@
+/* .header {
+    background: #83c5be;
+    color: #ffddd2;
+    display: flex;
+    justify-content: center;
+    padding: 15px
+} */
+
 .header {
-    background: #aaa1c8;
+    background: rgb(85, 77, 130);
     color: white;
     display: flex;
     justify-content: center;

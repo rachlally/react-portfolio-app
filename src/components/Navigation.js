@@ -3,8 +3,8 @@ import '../styles/Navigation.css'
 
 function Navigation({currentPage, handlePageChange}) {
     return (
-      <div className="navigation">
-        <ul className="nav nav-tabs justify-content-center">
+      // <div className="navigation">
+        <ul className="nav nav-tabs justify-content-center navigation">
           <li className="nav-item">
             <a href="#aboutme" onClick={()=> handlePageChange("AboutMe")}
             className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}>About Me</a>
@@ -22,7 +22,7 @@ function Navigation({currentPage, handlePageChange}) {
             className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>Resume</a>
           </li>
         </ul>
-      </div>
+      // </div>
 
     );
   }

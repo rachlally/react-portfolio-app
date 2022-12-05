@@ -3,7 +3,8 @@ import React from "react";
 function Resume() {
     return (
     <div>
-        <p>Resume</p>
+        <h3>Resume</h3>
+        
         <a rel="noreferrer" href={require(`../../assets/Rachel_Lally.pdf`)} target="_blank" download>Download</a>
 
     </div>

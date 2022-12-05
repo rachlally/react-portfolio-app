@@ -8,7 +8,6 @@ import Navigation from './Navigation';
 import Header from './Header';
 import '../styles/Pages.css'
 
-// import Header from './Header';
 
 function PageContainer (){
     const [currentPage, setCurrentPage] = useState('AboutMe');

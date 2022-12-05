@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import Project from "./Project";
+// import Container from "react-bootstrap/Container";
+// import Card from 'react-bootstrap/Card';
+import '../../styles/Project.css';
 
 
 function Portfolio() {
@@ -12,32 +15,32 @@ function Portfolio() {
         },
         {
             name: "Work Day Scheduler",
-            deployedApp: "schedule.com",
-            gitHubLink: "github.com",
+            deployedApp: "https://rachlally.github.io/work-day-scheduler/",
+            gitHubLink: "https://github.com/rachlally/work-day-scheduler",
             description: "JavaScript, Bootstrap"
         },
         {
             name: "Weather Dashboard",
-            deployedApp: "dashboard.com",
-            gitHubLink: "github.com",
+            deployedApp: "https://rachlally.github.io/weather-dashboard/",
+            gitHubLink: "https://github.com/rachlally/weather-dashboard",
             description: "JavaScript, Bootstrap"
         },
         {
             name: "Team Profile Generator",
-            deployedApp: "generator.com",
-            gitHubLink: "github.com",
+            deployedApp: "https://github.com/rachlally/team-profile-generator",
+            gitHubLink: "https://github.com/rachlally/team-profile-generator",
             description: "CSS, JavaScript"
         },
         {
             name: "Note Taker",
-            deployedApp: "note.com",
-            gitHubLink: "github.com",
+            deployedApp: "https://note-taker-lally.herokuapp.com/",
+            gitHubLink: "https://github.com/rachlally/note-taker",
             description: "CSS, JavaScript"
         },
         {
             name: "Code Quiz",
-            deployedApp: "spooky.com",
-            gitHubLink: "github.com",
+            deployedApp: "https://rachlally.github.io/code-quiz/",
+            gitHubLink: "https://github.com/rachlally/code-quiz",
             description: "CSS, JavaScript, Local Storage"
         }
     ])
@@ -45,7 +48,8 @@ function Portfolio() {
 
     return (
         <div >
-            {projects.map((p, i) => (                
+            {projects.map((p, i) => (
+
                 <Project
                     project={p}
                     key={'project' + i} />

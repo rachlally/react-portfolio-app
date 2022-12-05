@@ -1,7 +1,7 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
 // import Row from 'react-bootstrap/Row';
-import Container from "react-bootstrap/Container";
+
 import '../../styles/Project.css';
 
 
@@ -9,20 +9,20 @@ import '../../styles/Project.css';
 function Project({ project }) {
     const { name, deployedApp, gitHubLink, description } = project
     return (
-        <Container>
-            <Card className="project col-4 d-flex flex-row" key={name}>
+        <div className='container'>
+            <Card style={{ width: '30rem'} }   className="project " key={name}>
                 <Card.Img src={require(`../../assets/projects/${name}.png`)} alt={name} height="280" />
-                <Card.ImgOverlay>
+                {/* <Card.ImgOverlay>
                     <Card.Title></Card.Title>
-                    <Card.Text>
+                    <Card.Text> */}
                         <a href={deployedApp}>{name}</a>
                         <br />
                         <a href={gitHubLink}>GitHub</a>
-                    </Card.Text>
-                    <Card.Text>{description}</Card.Text>
-                </Card.ImgOverlay>
+                    {/* </Card.Text> */}
+                    <p>{description}</p>
+                {/* </Card.ImgOverlay> */}
             </Card>
-        </Container>
+        </div>
 
 
 
