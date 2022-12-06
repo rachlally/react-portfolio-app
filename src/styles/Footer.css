@@ -1,8 +1,8 @@
 .footer {
     background: rgb(85, 77, 130);
-    height: 100px;
+    /* height: 100px; */
     display: flex;
     justify-content: space-evenly;
-    padding: 30px
+    padding: 4%
 }
 

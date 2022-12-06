@@ -1,6 +1,49 @@
 .project {
     border-style: solid;
     border-width: 4px;
-    border-color: rgb(214, 231, 22);
+    /* background-color: rgb(187, 108, 10); */
     margin: 5px
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.container Card {
+    /* flex-basis: calc(45%-1em); */
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    margin: 0.5em;
+    background-color: rgb(187, 108, 10);
+}
+
+.project Card {
+    
+    padding: 10px;
+    margin: 0.5em;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 5px;
+    align-items: center;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.imgBorder{
+    border-style: inset;
+    border-width: 5px;
+    border-color:rgb(186, 179, 229);
+    background-color: rgb(186, 179, 229);
 }

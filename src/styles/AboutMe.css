@@ -1,5 +1,5 @@
 .aboutContainer {
-    height: 100vh
+    height: 60vh
 }
 
 .aboutMe {
@@ -21,7 +21,7 @@
     margin: 5px;
     border: inset 2px;
     border-width: 5px;
-    
+    background-color: rgb(199, 214, 130);
 }
 
 .aboutText {

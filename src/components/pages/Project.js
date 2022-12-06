@@ -1,3 +1,4 @@
+
 import React from "react";
 import Card from 'react-bootstrap/Card';
 // import Row from 'react-bootstrap/Row';
@@ -10,17 +11,21 @@ function Project({ project }) {
     const { name, deployedApp, gitHubLink, description } = project
     return (
         <div className='container'>
-            <Card style={{ width: '30rem'} }   className="project " key={name}>
-                <Card.Img src={require(`../../assets/projects/${name}.png`)} alt={name} height="280" />
-                {/* <Card.ImgOverlay>
-                    <Card.Title></Card.Title>
-                    <Card.Text> */}
-                        <a href={deployedApp}>{name}</a>
+            <Card style={{ width: '40%' }} className="project" key={name}>
+                <Card.Body>
+                    <div className="imgBorder">
+                        <Card.Img src={require(`../../assets/projects/${name}.png`)} alt={name} />
+                    </div>
+                    <Card.Title>{name}</Card.Title>
+                    <div className="link">
+                        <a target="_blank" rel="noreferrer" href={deployedApp}><img src={require(`../../assets/visit.png`)} alt={`GitHub`} height="40" /></a>
                         <br />
-                        <a href={gitHubLink}>GitHub</a>
-                    {/* </Card.Text> */}
-                    <p>{description}</p>
-                {/* </Card.ImgOverlay> */}
+                        <a target="_blank" rel="noreferrer" href={gitHubLink}><img src={require(`../../assets/GitHub.png`)} alt={`GitHub`} height="40" /></a>
+                    </div>
+                    <div className='description'>
+                        <p>Technologies Used | {description}</p>
+                    </div>
+                </Card.Body>
             </Card>
         </div>
 
