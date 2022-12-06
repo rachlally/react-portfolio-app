@@ -44,6 +44,7 @@ function Contact() {
 
   return (
     <section className="formContainer">
+      <h3>Thanks for visiting!  I look forward to hearing from you. </h3>
       <div className="form ">
       <form  onSubmit={handleSubmit}>
         <div>
