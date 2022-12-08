@@ -1,12 +1,13 @@
-.formContainer{
+/* .formContainer{
   height: 55vh
-}
+} */
 
 .form { 
     margin: 20px;
     padding: 30px;
     display: flex;
     justify-content: center;
+
   } 
   
 .form input {
