@@ -9,6 +9,12 @@ import Project from "./Project";
 function Portfolio() {
     const [projects] = useState([
         {
+            name: "WasteNot Kitchen Tracker",
+            deployedApp: "https://wastenotkitchentracker.netlify.app/",
+            gitHubLink: "https://github.com/rachlally/feast-front-end",
+            description: "React, MySql, Sequelize, Node.JS, Tailwind"
+        },
+        {
             name: "Gloomhaven Helper",
             deployedApp: "https://gloomhaven-helper-deluxe.herokuapp.com/",
             gitHubLink: "https://github.com/Mattdack/gloomhaven-helper",
@@ -25,12 +31,6 @@ function Portfolio() {
             deployedApp: "https://rachlally.github.io/weather-dashboard/",
             gitHubLink: "https://github.com/rachlally/weather-dashboard",
             description: "HTML, JavaScript, Bootstrap"
-        },
-        {
-            name: "Team Profile Generator",
-            deployedApp: "https://github.com/rachlally/team-profile-generator",
-            gitHubLink: "https://github.com/rachlally/team-profile-generator",
-            description: "CSS, JavaScript"
         },
         {
             name: "Note Taker",
