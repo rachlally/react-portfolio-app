@@ -1,10 +1,21 @@
 
+.aboutBox {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutContainer {
+    display: flex;
+    
+    
+}
+
 .about {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-   
+    color:rgb(96, 92, 133);
     border-width: 5px;
     padding: 15px;
   
@@ -12,16 +23,18 @@
 }
 
 .aboutImg {
-    padding: 5%;
-    margin: 10%;
+    padding: 1%;
+    /* margin: 10%; */
     border: inset 2px;
-    border-width: 5px;
-    background-color: rgb(199, 214, 130);
+   
+    background-color: rgb(126, 84, 123);
 }
 
 .aboutText {
     
-    padding: 2px;
-    margin: 2px;
+  
+    padding: 5px;
+    margin: 5px;
+    color:white;
     
 }

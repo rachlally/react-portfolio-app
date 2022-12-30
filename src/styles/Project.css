@@ -13,7 +13,6 @@
 }
 
 .container Card {
-    /* flex-basis: calc(45%-1em); */
     display: flex;
     align-items: flex-end;
     padding: 10px;
