@@ -13,7 +13,7 @@ function AboutMe() {
                         <Image style={{ width: '20%' }} className="aboutImg fluid" src={require(`../../assets/Headshot.png`)} alt={`Rachel's Headshot`} />
                     
                     <div>
-                        <h4 className="aboutText">My name is Rachel Lally.  I am a Full-Stack Web Developer based out of White Salmon, Washington.  I am passionate about helping clients bring their vision to frution.  I look forward to connecting!</h4>
+                        <h4 className="aboutText">My name is Rachel Lally.  I am a Full-Stack Web Developer based out of White Salmon, Washington.  I am passionate about helping clients bring their vision to fruition.  I look forward to connecting!</h4>
                         
                     </div>
                 </div>
