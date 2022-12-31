@@ -1,18 +1,6 @@
-
-.aboutBox {
-    display: flex;
-    justify-content: center;
-}
-
-.aboutContainer {
-    display: flex;
-    
-    
-}
-
 .about {
     display: flex;
-    flex-direction: row;
+    
     justify-content: center;
     flex-wrap: wrap;
     color:rgb(96, 92, 133);
@@ -35,6 +23,11 @@
   
     padding: 5px;
     margin: 5px;
-    color:white;
+    color:rgb(126, 84, 123);
     
+}
+
+.blurb {
+    padding: 25px;
+    margin: 25px
 }
