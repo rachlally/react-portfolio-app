@@ -23,7 +23,7 @@ function Resume() {
                 </div>
             </div>    
                 <div className="resume">
-                    <Button variant="light" rel="noreferrer" href={require(`../../assets/Rachel_Lally.pdf`)} target="_blank" download>Download Resume</Button>
+                    <Button variant="light" rel="noreferrer" href={require(`../../assets/Rachel Lally Resume (1).pdf`)} target="_blank" download>Download Resume</Button>
                 </div>
         </div>
     );
