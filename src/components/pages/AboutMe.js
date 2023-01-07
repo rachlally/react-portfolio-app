@@ -11,7 +11,7 @@ function AboutMe() {
                 <Image style={{ width: '20%' }} className="aboutImg fluid" src={require(`../../assets/Headshot.png`)} alt={`Rachel's Headshot`} />
 
                 <div className="blurb">
-                    <h4 className="aboutText">My name is Rachel Lally, a Full-Stack Web Developer based out of White Salmon, Washington.  I am passionate about helping clients bring their vision to life. </h4>
+                    <h4 className="aboutText">Hello!  My name is Rachel Lally, a Full-Stack Web Developer based out of White Salmon, Washington.  I am a recent graduate of the University of Washington's 12-week intensive program with training in building modern and mobile-friendly applications. <br/> <br/>With a background in high-end Hospitality and Customer-Service Management, I hope to interact closely with clients and a team to create useful applications.  I am passionate about helping clients bring their vision to life.  <br/><br/>Thank you for stopping by!  I look forward to connecting! </h4>
 
                 </div>
             </div>
