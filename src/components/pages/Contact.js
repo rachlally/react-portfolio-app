@@ -1,8 +1,8 @@
 // import React, { useState } from "react";
-import { validateEmail } from "../../utils/helpers";
+// import { validateEmail } from "../../utils/helpers";
 import '../../styles/Contact.css';
 // import Button from 'react-bootstrap/Button';
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 // function Contact() {
