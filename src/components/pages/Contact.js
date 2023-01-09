@@ -1,7 +1,7 @@
 // import React, { useState } from "react";
 // import { validateEmail } from "../../utils/helpers";
 import '../../styles/Contact.css';
-// import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -93,7 +93,7 @@ import emailjs from '@emailjs/browser';
 
 // export default Contact;
 
-function Contact () {
+function Contact() {
   // const [formState, setFormState] = useState({
   //   name: '', email: '', message: ''
   // })
@@ -106,9 +106,9 @@ function Contact () {
 
     emailjs.sendForm('service_chpi9ea', 'template_ftqew0s', form.current, 'iRQMp1j0RxJxTlHeF')
       .then((result) => {
-          console.log(result.text);
+        console.log(result.text);
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text);
       });
     e.target.reset()
   };
@@ -146,16 +146,27 @@ function Contact () {
   // }
 
 
+
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
+    <div className="formContainer ">
+      <form className="form " ref={form} onSubmit={sendEmail}>
+        <div className="mb-3">
+          <label className="form-label " >Name:</label>
+          <input type="text" name="user_name" className="form-control" placeholder='Name or Company'/>
+        </div>
+        <div className="mb-3">
+          <label class="form-label">Email:</label>
+          <input type="email" name="user_email" className="form-control"  placeholder='name@example.com'/>
+        </div>
+        <div className="mb-3">
+          <label className="form-label" >Message:</label>
+          <textarea name="message" rows="3" className="form-control" placeholder='Your message here...'/>
+        </div>
+        <div>
+          <Button type="submit" value="Send">Submit</Button>
+        </div>
+      </form>
+    </div>
   );
 };
 
