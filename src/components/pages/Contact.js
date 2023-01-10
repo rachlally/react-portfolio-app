@@ -148,24 +148,35 @@ function Contact() {
 
 
   return (
-    <div className="formContainer ">
-      <form className="form " ref={form} onSubmit={sendEmail}>
-        <div className="mb-3">
-          <label className="form-label " >Name:</label>
-          <input type="text" name="user_name" className="form-control" placeholder='Name or Company'/>
-        </div>
-        <div className="mb-3">
-          <label class="form-label">Email:</label>
-          <input type="email" name="user_email" className="form-control"  placeholder='name@example.com'/>
-        </div>
-        <div className="mb-3">
-          <label className="form-label" >Message:</label>
-          <textarea name="message" rows="3" className="form-control" placeholder='Your message here...'/>
-        </div>
-        <div>
-          <Button type="submit" value="Send">Submit</Button>
-        </div>
-      </form>
+    <div className="flex top-0 start-50 ">
+    <div className="text-center">
+      <h3 className="p-4">Contact Me</h3>
+      <div>
+        <img src={require(`../../assets/email.png`)} alt={(`email logo`)} height="50" />
+        <p>rlally89@gmail.com</p>
+        <img src={require(`../../assets/phone.png`)} alt={(`phone logo`)} height="50" />
+        <p>+1 406-640-2928</p>
+      </div>
+      <div className="formContainer">
+        <form className="form" ref={form} onSubmit={sendEmail}>
+          <div className="">
+            <label className="form-label " ></label>
+            <input type="text" name="user_name" className="form-control" placeholder='Your Full Name' />
+          </div>
+          <div className="">
+            <label class="form-label"></label>
+            <input type="email" name="user_email" className="form-control" placeholder='Your Email' />
+          </div>
+          <div className="mb-3">
+            <label className="form-label" ></label>
+            <textarea name="message" rows="3" className="form-control" placeholder='Your message here...' />
+          </div>
+          <div>
+            <Button type="submit" value="Send" className="mb-3">Send Message</Button>
+          </div>
+        </form>
+      </div>
+    </div>
     </div>
   );
 };
