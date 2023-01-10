@@ -8,7 +8,7 @@ import '../../styles/Project.css';
 
 
 function Project({ project }) {
-    const { name, deployedApp, gitHubLink, description } = project
+    const { name, deployedApp, gitHubLink, description, technology } = project
     return (
         <div className='container'>
             <Card style={{ width: '40%' }} className="project" key={name}>
@@ -23,7 +23,10 @@ function Project({ project }) {
                         <a target="_blank" rel="noreferrer" href={gitHubLink}><img src={require(`../../assets/GitHub.png`)} alt={`GitHub`} height="40" /></a>
                     </div>
                     <div className='description'>
-                        <p>Technologies Used | {description}</p>
+                        <p>{description}</p>
+                    </div>
+                    <div>
+                        <p>Technology Used: {technology}</p>
                     </div>
                 </Card.Body>
             </Card>
