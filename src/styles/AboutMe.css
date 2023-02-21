@@ -28,6 +28,9 @@
 }
 
 .blurb {
-    padding: 25px;
-    margin: 25px
+    padding: 50px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+
 }
